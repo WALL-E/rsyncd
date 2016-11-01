@@ -1,5 +1,18 @@
 # rsync 客户端使用说明
 
+
+## 安装步骤
+
+```
+cd /etc/
+
+git clone https://github.com/WALL-E/rsyncd.git
+
+init.sh
+
+start.sh
+```
+
 ## 列出rsync 服务器上的所提供的同步内容
 
 ```
