@@ -26,7 +26,7 @@ rsync --password-file=/tmp/password /home/vagrant/vagrant_1.8.5_x86_64.rpm mysql
 
 
 ## 配置密码文件
-文件内容是密码，文件权限必须是600
+目的是不需要命令行交互输入密码。文件内容是密码，文件权限必须是600
 
 ```
 [vagrant@dockerHost-102 ~]$ ls -l /tmp/password
