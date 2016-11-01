@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd `dirname $0`
+
 role=`id -u`
 if test $role -ne 0
 then
@@ -7,7 +9,7 @@ then
     exit 1
 fi
 
-(command -v rsync || echo "please install rsync";exit 1)
+(command -v rsync 1> /dev/null || echo "please install rsync";exit 1)
 
 adduser mysql 2>/dev/null
 
