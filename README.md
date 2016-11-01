@@ -13,11 +13,11 @@ init.sh
 start.sh
 ```
 
-## 列出rsync 服务器上的所提供的同步内容
+## 手动测试
 
 ```
+# 列出rsync 服务器上的所提供的同步内容
 rsync  --list-only mysql@172.28.32.101::
-
 rsync  --list-only --password-file=/tmp/password mysql@172.28.32.101::mysql
 
 # 同步文件
